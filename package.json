@@ -1,0 +1,43 @@
+{
+  "name": "index-of",
+  "description": "Get the index of the first element in an array that returns truthy for the given value, using strict equality for comparisons.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonschlinkert/index-of",
+  "author": {
+    "name": "Jon Schlinkert",
+    "url": "https://github.com/jonschlinkert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jonschlinkert/index-of.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/index-of/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jonschlinkert/index-of/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "keywords": [
+    "array",
+    "index",
+    "index-of",
+    "javascript",
+    "js",
+    "util",
+    "utils"
+  ]
+}
