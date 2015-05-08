@@ -1,7 +1,7 @@
 {
   "name": "index-of",
   "description": "Get the index of the first element in an array that returns truthy for the given value, using strict equality for comparisons.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/jonschlinkert/index-of",
   "author": {
     "name": "Jon Schlinkert",
@@ -17,15 +17,16 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/jonschlinkert/index-of/blob/master/LICENSE-MIT"
+      "url": "https://github.com/jonschlinkert/index-of/blob/master/LICENSE"
     }
   ],
+  "files": ["index.js"],
   "main": "index.js",
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha -R spec"
+    "test": "mocha"
   },
   "devDependencies": {
     "mocha": "*",
