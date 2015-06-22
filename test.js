@@ -19,7 +19,7 @@ describe('indexOf', function () {
   });
 
   it('should return -1 if fromIndex is out of range:', function () {
-    indexOf(['a', undefined, 'b', 'c', 'a'], undefined, 0).should.equal(1);
+    indexOf(['a', undefined, 'b', 'c', 'a'], undefined, 5).should.equal(-1);
   });
 
   it('should return -1 if the element does not exist:', function () {
