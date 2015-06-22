@@ -17,12 +17,16 @@ module.exports = function indexOf(arr, ele, start) {
     ? (len + start)
     : start;
 
-  while (len--) {
-    if (arr[i++] === ele) {
-      idx = i - 1;
-      break;
-    }
+  if (i >= arr.length) {
+    return -1;
   }
 
-  return idx;
+  while (i < len) {
+    if (arr[i] === ele) {
+      return i;
+    }
+    i++;
+  }
+
+  return -1;
 };
