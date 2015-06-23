@@ -18,11 +18,18 @@ describe('indexOf', function () {
     indexOf(['a', 'b', 'c'], 'c').should.equal(2);
   });
 
+  it('should return -1 if fromIndex is out of range:', function () {
+    indexOf(['a', undefined, 'b', 'c', 'a'], undefined, 5).should.equal(-1);
+  });
+
   it('should return -1 if the element does not exist:', function () {
     indexOf(['a', 'b', 'c'], 'd').should.equal(-1);
   });
 
   it('should get the index, starting from the given index:', function () {
     indexOf(['a', 'b', 'c', 'a', 'b', 'c'], 'b', 2).should.equal(4);
+    indexOf(['a', undefined, 'b', 'c', 'a'], undefined, 0).should.equal(1);
+    indexOf(['a', undefined, 'b', 'c', 'a'], undefined, 1).should.equal(1);
+    indexOf(['a', undefined, 'b', 'c', 'a'], undefined, 2).should.equal(-1);
   });
 });
